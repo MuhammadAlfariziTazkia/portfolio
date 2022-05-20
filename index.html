@@ -53,10 +53,15 @@
 
 
   <section id="header" class="mt-5 p-5">
+    <div id="loader">
+      <center>
+        <img src="gif/loader.gif" alt="" width="100px" class="shadow" style="border-radius: 100%;">
+        <p class="mt-3">Please wait, data is still on the way</p>
+    </center>
+    </div>
     <div class="container">
       <div class="row">
         <div class="col-md-8 p-5" id="profil_information">
-          
         </div>
         <div class="col-md-4 p-2" id="profil_picture"></div>
       </div>
@@ -544,9 +549,10 @@
       request.send();
       request.onload = () => {
         if (request.status === 200) {
+          $("#loader").remove()
           let profil = JSON.parse(request.response);
           console.log(profil);
-
+          
           let button_download_cv = "<button class='btn btn-dark mt-4 shadow p-2'> Download CV </button>"
 
           let profil_information = `<h1>Holla !</h1>` 
