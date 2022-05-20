@@ -540,7 +540,7 @@
     loadWorks();
     function loadProfil() {
       let request = new XMLHttpRequest();
-      request.open("GET", "http://m-alfarizi-tazkia-porto.herokuapp.com/api/profil");
+      request.open("GET", "https://m-alfarizi-tazkia-porto.herokuapp.com/api/profil");
       request.send();
       request.onload = () => {
         if (request.status === 200) {
@@ -554,13 +554,14 @@
           profil_information += button_download_cv
 
           let profil_image = `<img src='img/${profil.image}' width=350 height=350>`
-
+          alert("profil")
 
           $("#profil_information").append(profil_information);
           $("#profil_picture").append(profil_image)
         } else {
-          console.log("Page not found"); // if link is broken, output will be page not found
+          alert("Page not found"); // if link is broken, output will be page not found
         }
+       
       };
     }
     function loadSkills() {
