@@ -540,7 +540,7 @@
     loadWorks();
     function loadProfil() {
       let request = new XMLHttpRequest();
-      request.open("GET", "http://localhost:9292/api/profil");
+      request.open("GET", "http://m-alfarizi-tazkia-porto.heroku.app/api/profil");
       request.send();
       request.onload = () => {
         if (request.status === 200) {
