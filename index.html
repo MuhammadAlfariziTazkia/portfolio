@@ -74,9 +74,10 @@
     </div>
     <div class="container">
       <div class="row">
-        <div class="col-md-8 p-5" id="profil_information">
+        <div class="col-md-5" id="profil_picture">
         </div>
-        <div class="col-md-4 p-2" id="profil_picture"></div>
+        <div class="col-md-7 pt-5 pb-5" id="profil_information">
+        </div>
       </div>
   </section>
 
@@ -216,14 +217,14 @@
           let profil = JSON.parse(request.response);
           console.log(profil);
 
-          let button_download_cv = "<button class='btn btn-dark mt-4 shadow p-2'> Download CV </button>"
+          let button_download_cv = "<button class='btn btn-dark mt-4 shadow p-2' style='width:250px'><i class='fa-solid fa-circle-arrow-down' style='margin-right:10px'></i>Download CV</button>"
 
           let profil_information = `<h1>Holla !</h1>`
           profil_information += `<h1> I am <b> ${profil.name} </b> </h1>`
           profil_information += `<h2 class="mt-3"> ${profil.bio} </h2>`
           profil_information += button_download_cv
 
-          let profil_image = `<img src='img/${profil.image}' width=350 height=350>`
+          let profil_image = `<center><img src='img/${profil.image}' style="width:100%"></center>`
 
           $("#profil_information").append(profil_information);
           $("#profil_picture").append(profil_image)
@@ -241,8 +242,15 @@
       request.onload = () => {
         if (request.status === 200) {
           let skills = JSON.parse(request.response);
-
-          $("#skills_content").append(`<div class="row p-3"><div class="col-md-3">  <img src="img/figure.png" alt="" width="100%"></div><div class="col-md-9">  <h4 class="mt-2"><b>JavaScript</b></h4><div class="progress mt-3 bg-dark shadow" style="width: 75%;">    <div class="progress-bar bg-warning" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div></div></div></div>`)
+          skills.forEach(skill => {
+            if(skill.category == "Programming Languages"){
+              $("#skills_content").append(` <div class="card shadow p-3 m-2 border-light" style="border-radius: 15px;"><div class="row"><div class="col-md-3 p-3"><center><img src="img/${skill.icon}" alt="" width="55%"></center></div><div class="col-md-9 pl-3"><div class="badge bg-primary">${skill.category}</div><h5 class="mt-3"><b>${skill.name}</b></h5><div class="progress bg-dark shadow" style="width: 75%; border-radius: 0;"><div class="progress-bar bg-warning" role="progressbar" style="width: ${skill.fluently_score}%" aria-valuenow="${skill.fluently_score}" aria-valuemin="0" aria-valuemax="100"></div></div></div></div></div>`)
+            }else if(skill.category == "Programming Framework"){
+              $("#skills_content").append(` <div class="card shadow p-3 m-2 border-light" style="border-radius: 15px;"><div class="row"><div class="col-md-3 p-3"><center><img src="img/${skill.icon}" alt="" width="55%"></center></div><div class="col-md-9 pl-3"><div class="badge bg-dark">${skill.category}</div><h5 class="mt-3"><b>${skill.name}</b></h5><div class="progress bg-dark shadow" style="width: 75%; border-radius: 0;"><div class="progress-bar bg-warning" role="progressbar" style="width: ${skill.fluently_score}%" aria-valuenow="${skill.fluently_score}" aria-valuemin="0" aria-valuemax="100"></div></div></div></div></div>`)
+            }else if(skill.category == "Programming Tools"){
+              $("#skills_content").append(` <div class="card shadow p-3 m-2 border-light" style="border-radius: 15px;"><div class="row"><div class="col-md-3 p-3"><center><img src="img/${skill.icon}" alt="" width="55%"></center></div><div class="col-md-9 pl-3"><div class="badge bg-danger">${skill.category}</div><h5 class="mt-3"><b>${skill.name}</b></h5><div class="progress bg-dark shadow" style="width: 75%; border-radius: 0;"><div class="progress-bar bg-warning" role="progressbar" style="width: ${skill.fluently_score}%" aria-valuenow="${skill.fluently_score}" aria-valuemin="0" aria-valuemax="100"></div></div></div></div></div>`)
+            }
+          });
           console.log(skills);
         } else {
           console.log("Page not found"); // if link is broken, output will be page not found
@@ -258,7 +266,7 @@
           let projects = JSON.parse(request.response);
 
           projects.forEach(project => {
-            $("#project_content").append(`<div class="row mb-2"><hr><div class="col-md-3"><img src="img/figure.png" alt="" width="100%"></div><div class="col-md-9"><h4><b>${project.name}</b></h4><h6>${project.position}</h6><h6>${project.time}</h6></div></div>`)
+            $("#project_content").append(`<div class="row mb-2"><hr><div class="col-md-3"><img class="shadow" src="img/${project.icon}" alt="" width="100%"></div><div class="col-md-9"><h4><b>${project.name}</b></h4><h6>${project.position}</h6><h6>${project.time}</h6></div></div>`)
           });
 
           $("#project_content").append("<hr>")
@@ -274,9 +282,11 @@
       request.send();
       request.onload = () => {
         if (request.status === 200) {
-          let work = JSON.parse(request.response);
-          console.log(work);
-          $("#work_content").append(`<div class="row mb-2"><hr><div class="col-md-3"><img src="img/figure.png" alt="" width="100%"></div><div class="col-md-9"><h4><b>LingoTalk Indonesia </b></h4><h6>Backend Engineer Intern</h6><h6>June 2021 - Oct 2021</h6></div></div>`)
+          let works = JSON.parse(request.response);
+          console.log(works);
+          works.forEach(work => {
+            $("#work_content").append(`<div class="row mb-2"><hr><div class="col-md-3"><center><img class="shadow" src="img/${work.company_icon}" alt="" width="70%" style="border-radius:100%"></center></div><div class="col-md-9"><h4><b>${work.company}</b></h4><h6>${work.position} ${work.type}</h6><h6>${work.start} - ${work.end}</h6></div></div>`)
+          });
           $("#work_content").append("<hr>")
         } else {
           console.log("Page not found"); // if link is broken, output will be page not found
