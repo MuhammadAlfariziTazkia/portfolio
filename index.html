@@ -152,14 +152,18 @@
   <section id="project_and_work" class="bg-dark" style="color: white;">
     <div class="container p-5">
       <div class="row">
-        <div class="col-md-6" id="work">
-          <h2>Work Experience</h2>
+        <div class="col-md-6 p-3" id="work">
+          <div class="badge bg-light" style="color: black;">
+            <h2>Work Experience</h2>
+          </div>
           <div class="mt-4" style="overflow-y: scroll; overflow-x: hidden;height: 500px; scrollbar-color: black black;"
             id="work_content">
           </div>
         </div>
-        <div class="col-md-6" id="project">
-          <h2>Project Experience</h2>
+        <div class="col-md-6 p-3" id="project">
+          <div class="badge bg-light" style="color: black;">
+            <h2>Project Experience</h2>
+          </div>
           <div class="mt-4" style="overflow-y: scroll; overflow-x: hidden;height: 500px; scrollbar-color: black black;"
             id="project_content">
           </div>
@@ -171,14 +175,18 @@
   <section id="skill_and_certificate">
     <div class="container p-5 mt-5">
       <div class="row">
-        <div class="col-md-6" id="skill">
-          <h2><b>My Skills</b></h2>
+        <div class="col-md-6 p-3" id="skill">
+          <div class="badge bg-dark">
+            <h2><b>My Skills</b></h2>
+          </div>
           <div class="mt-4" style="overflow-y: scroll; overflow-x: hidden;height: 500px; scrollbar-color: black black;"
             id="skills_content">
           </div>
         </div>
-        <div class="col-md-6" id="certificate">
-          <h2>Certifications</h2>
+        <div class="col-md-6 p-3" id="certificate">
+          <div class="badge bg-dark">
+            <h2>Certifications</h2>
+          </div>
           <div class="mt-4" style="overflow-y: scroll; overflow-x: hidden;height: 500px; scrollbar-color: black black;"
             id="certificate_content">
           </div>
@@ -189,10 +197,10 @@
 
   <section id="education" class="bg-dark p-5" style="color: white;">
     <center>
+      <h1>
+        My Education
+      </h1>
       <div class="container" id="education_content">
-        <h1>
-          My Education
-        </h1>
       </div>
     </center>
   </section>
@@ -243,11 +251,11 @@
         if (request.status === 200) {
           let skills = JSON.parse(request.response);
           skills.forEach(skill => {
-            if(skill.category == "Programming Languages"){
+            if (skill.category == "Programming Languages") {
               $("#skills_content").append(` <div class="card shadow p-3 m-2 border-light" style="border-radius: 15px;"><div class="row"><div class="col-md-3 p-3"><center><img src="img/${skill.icon}" alt="" width="55%"></center></div><div class="col-md-9 pl-3"><div class="badge bg-primary">${skill.category}</div><h5 class="mt-3"><b>${skill.name}</b></h5><div class="progress bg-dark shadow" style="width: 75%; border-radius: 0;"><div class="progress-bar bg-warning" role="progressbar" style="width: ${skill.fluently_score}%" aria-valuenow="${skill.fluently_score}" aria-valuemin="0" aria-valuemax="100"></div></div></div></div></div>`)
-            }else if(skill.category == "Programming Framework"){
+            } else if (skill.category == "Programming Framework") {
               $("#skills_content").append(` <div class="card shadow p-3 m-2 border-light" style="border-radius: 15px;"><div class="row"><div class="col-md-3 p-3"><center><img src="img/${skill.icon}" alt="" width="55%"></center></div><div class="col-md-9 pl-3"><div class="badge bg-dark">${skill.category}</div><h5 class="mt-3"><b>${skill.name}</b></h5><div class="progress bg-dark shadow" style="width: 75%; border-radius: 0;"><div class="progress-bar bg-warning" role="progressbar" style="width: ${skill.fluently_score}%" aria-valuenow="${skill.fluently_score}" aria-valuemin="0" aria-valuemax="100"></div></div></div></div></div>`)
-            }else if(skill.category == "Programming Tools"){
+            } else if (skill.category == "Programming Tools") {
               $("#skills_content").append(` <div class="card shadow p-3 m-2 border-light" style="border-radius: 15px;"><div class="row"><div class="col-md-3 p-3"><center><img src="img/${skill.icon}" alt="" width="55%"></center></div><div class="col-md-9 pl-3"><div class="badge bg-danger">${skill.category}</div><h5 class="mt-3"><b>${skill.name}</b></h5><div class="progress bg-dark shadow" style="width: 75%; border-radius: 0;"><div class="progress-bar bg-warning" role="progressbar" style="width: ${skill.fluently_score}%" aria-valuenow="${skill.fluently_score}" aria-valuemin="0" aria-valuemax="100"></div></div></div></div></div>`)
             }
           });
@@ -278,14 +286,14 @@
     }
     function loadWorks() {
       let request = new XMLHttpRequest();
-      request.open("GET", "https://m-alfarizi-tazkia-porto.herokuapp.com/api/work");
+      request.open("GET", "http://m-alfarizi-tazkia-porto.herokuapp.com/api/work");
       request.send();
       request.onload = () => {
         if (request.status === 200) {
           let works = JSON.parse(request.response);
           console.log(works);
           works.forEach(work => {
-            $("#work_content").append(`<div class="row mb-2"><hr><div class="col-md-3"><center><img class="shadow" src="img/${work.company_icon}" alt="" width="70%" style="border-radius:100%"></center></div><div class="col-md-9"><h4><b>${work.company}</b></h4><h6>${work.position} ${work.type}</h6><h6>${work.start} - ${work.end}</h6></div></div>`)
+            $("#work_content").append(`<div class="row mb-2"><hr><div class="col-md-3 p-3"><center><img src="img/${work.company_icon}" alt="" width="50%" style="border-radius: 10px"></center></div><div class="col-md-9 mt-2 mb-2"><h4><b>${work.company}</b></h4><h6>${work.position} ${work.type}</h6><h6>${work.start} - ${work.end}</h6></div></div>`)
           });
           $("#work_content").append("<hr>")
         } else {
@@ -295,15 +303,15 @@
     }
     function loadCertificates() {
       let request = new XMLHttpRequest();
-      request.open("GET", "https://m-alfarizi-tazkia-porto.herokuapp.com/api/certificate");
+      request.open("GET", "http://m-alfarizi-tazkia-porto.herokuapp.com/api/certificate");
       request.send();
       request.onload = () => {
         if (request.status === 200) {
           let certificates = JSON.parse(request.response);
           console.log(certificates);
-
+          // <h6>Expired on 2022</h6>
           certificates.forEach(certificate => {
-            $("#certificate_content").append(`<div class="row mb-3"><hr><div class="col-md-3"><img src="img/figure.png" alt="" width="100%"></div><div class="col-md-9"><h4><b>TensorFlow Developer Certification</b></h4>  <h6><b>Issued By TensorFlow</b></h6><h6><i>Machine Learning Development</i></h6><h6>Expired on 2022</h6><button class="btn btn-dark mt-2 shadow">See Credentials</button></div></div>`)
+            $("#certificate_content").append(`<div class="row mb-3"><hr><div class="col-md-3"><img src="img/${certificate.organization_icon}" alt="" width="100%"></div><div class="col-md-9"><h4><b>${certificate.name}</b></h4>  <h6><b>Issued By ${certificate.organization_issued}</b></h6><h6><i>${certificate.field}</i></h6><button class="btn btn-dark mt-2 shadow">See Credentials</button></div></div>`)
           });
           $("#certificate_content").append("<hr>")
         } else {
@@ -313,13 +321,15 @@
     }
     function loadEducation() {
       let request = new XMLHttpRequest();
-      request.open("GET", "https://m-alfarizi-tazkia-porto.herokuapp.com/api/education");
+      request.open("GET", "http://m-alfarizi-tazkia-porto.herokuapp.com/api/education");
       request.send();
       request.onload = () => {
         if (request.status === 200) {
-          let education = JSON.parse(request.response);
+          let educations = JSON.parse(request.response);
 
-          $("#education_content").append(`<hr class="mt-4"><h5 class="mt-4">Sumatera Institute of Technology</h5><h6>Computer Science</h6>`)
+          educations.forEach(education => {
+            $("#education_content").append(`<hr class="mt-4"><h5 class="mt-4">${education.institution}</h5><h6>${education.majory}</h6>`)
+          });
           $("#education_content").append("<hr class='mt-4'>")
           console.log(education);
         } else {
