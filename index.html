@@ -321,7 +321,7 @@
             }
             let credential_id = `<h6 class="mt-2">Credential ID ${certificate.credential_id}</h6>`
             let field_badge = `<h6><span class="badge badge-pill bg-primary">${certificate.field}</span></h6>`
-            $("#certificate_content").append(`<div class="row mb-3"><hr><div class="col-md-3 p-3"><center><img src="img/${certificate.organization_icon}" alt="" width="60%"></center></div><div class="col-md-9 p-3">${field_badge}<h5><b>${certificate.name}</b></h5> <h6><b>Issued By ${certificate.organization_issued}</b></h6>${expired_date}<a href="${certificate.credential_url}" class="btn btn-dark mt-2 shadow" target="_blank">See Credentials</a></div></div>`)
+            $("#certificate_content").append(`<div class="row mb-3"><hr><div class="col-md-3 p-3"><center><img src="img/${certificate.organization_icon}" alt="" width="60%"></center></div><div class="col-md-9 p-3">${field_badge}<h5 class="mr-2"><b>${certificate.name}</b></h5> <h6><b>Issued By ${certificate.organization_issued}</b></h6>${expired_date}<a href="${certificate.credential_url}" class="btn btn-dark mt-2 shadow" target="_blank">See Credentials</a></div></div>`)
           });
           $("#certificate_content").append("<hr>")
         } else {
