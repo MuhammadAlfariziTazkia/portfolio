@@ -1,454 +1,640 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Welcome!</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Welcome!</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/00730551fd.js"
+      crossorigin="anonymous"
+    ></script>
 
-  <script src="https://kit.fontawesome.com/00730551fd.js" crossorigin="anonymous"></script>
+    <style>
+      * {
+        font-family: "Poppins", sans-serif;
+        margin: 0%;
+      }
 
-  <style>
-    * {
-      font-family: 'Poppins', sans-serif;
-      margin: 0%;
-    }
-  </style>
-</head>
+      section {
+        padding-top: 7rem;
+      }
 
-<body>
+      .theme {
+        border-radius: 25px;
+        background: linear-gradient(145deg, #232323, #1e1e1e);
+        box-shadow:  35px 35px 70px #171717,
+                    -35px -35px 70px #2b2b2b;
+      }
+    </style>
+  </head>
 
-
-  <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
-    <div class="container">
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item p-1">
-            <div class="bg-warning" style="border-radius:10px">
-              <a class="nav-link" href="#" style="color: black;">Home</a>
-            </div>
-          </li>
-          <li class="nav-item p-1">
-            <div class="bg-warning" style="border-radius:10px">
-              <a class="nav-link" href="#" style="color: black;">About</a>
-            </div>
-          </li>
-          <li class="nav-item p-1">
-            <div class="bg-warning" style="border-radius:10px">
-              <a class="nav-link" href="#" style="color: black;">Experience</a>
-            </div>
-          </li>
-          <li class="nav-item p-1">
-            <div class="bg-warning" style="border-radius:10px">
-              <a class="nav-link" href="#" style="color: black;">Skills and Certifications</a>
-            </div>
-          </li>
-          <li class="nav-item p-1">
-            <div class="bg-warning" style="border-radius:10px">
-              <a class="nav-link" href="#" style="color: black;">Education</a>
-            </div>
-          </li>
-
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-
-  <section id="header" class="mt-5 p-5">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-5" id="profil_picture">
-          <center><img src='img/profil.png' style="width:100%"></center>
-        </div>
-        <div class="col-md-7 pt-5 pb-5" id="profil_information">
-            <h1>Holla !</h1>
-            <h1> I am <b> Muhammad Alfarizi Tazkia </b> </h1>
-            <h2 class="mt-3"> Backend Engineer Enthusiast </h2>
-            <button class='btn btn-dark mt-4 shadow p-2' style='width:250px'><i class='fa-solid fa-circle-arrow-down' style='margin-right:10px'></i>Download CV</button>
-        </div>
-      </div>
-  </section>
-
-  <section id="contact" class="bg-dark" style="width: 100%;">
-    <div class="container p-5">
-      <div class="row mt-3 mb-3 justify-content-center m-auto">
-        <center>
-          <h3 class="mb-4" style="color: white;"><b>Let's Connected !</b></h3>
-        </center>
-        <div class="col-md-1">
-          <center><a target="_blank" class="social-media btn btn-dark btn-outline-light btn-lg btn-floating mt-2 shadow"
-              style="border-radius: 100px" href="https://github.com/MuhammadAlfariziTazkia" role="button">
-              <i class="fab fa-github"></i>
-            </a></center>
-        </div>
-        <div class="col-md-1">
-          <center><a target="_blank" class="social-media btn btn-dark btn-outline-light btn-lg btn-floating mt-2 shadow"
-              style="border-radius: 100px" href="https://www.linkedin.com/in/muhammad-alfarizi-tazkia/" role="button">
-              <i class="fab fa-linkedin"></i>
-            </a></center>
-        </div>
-        <div class="col-md-1">
-          <center><a target="_blank" class="social-media btn btn-dark btn-outline-light btn-lg btn-floating mt-2 shadow"
-              style="border-radius: 100px" href="https://www.instagram.com/muhammadalfarizi.t/" role="button">
-              <i class="fab fa-instagram"></i>
-            </a></center>
-        </div>
-        <div class="col-md-1">
-          <center><a target="_blank" class="social-media btn btn-dark btn-outline-light btn-lg btn-floating mt-2 shadow"
-              style="border-radius: 100px"
-              href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSMTSDxNzdpLqxPjVkSSlpzCTCtZtVlkgTWcJhCCMJJzndGwBvtnnppLWlTtRDKlXhbtHGzk"
-              role="button">
-              <i class="far fa-envelope"></i>
-            </a></center>
-        </div>
-        <div class="col-md-1">
-          <center><a target="_blank" class="social-media btn btn-dark btn-outline-light btn-lg btn-floating mt-2 shadow"
-              style="border-radius: 100px"
-              href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSMTSDxNzdpLqxPjVkSSlpzCTCtZtVlkgTWcJhCCMJJzndGwBvtnnppLWlTtRDKlXhbtHGzk"
-              role="button">
-              <i class="fa-brands fa-youtube"></i>
-            </a></center>
+  <body class="bg-dark">
+    <nav
+      class="navbar navbar-expand-lg bg-dark fixed-top"
+      data-bs-theme="dark"
+    >
+      <div class="container mt-2 mb-2">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item p-1">
+              <a class="nav-link text-light" href="#header" style="color: black"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item p-1">
+              <a class="nav-link text-light" href="#about" style="color: black"
+                >About</a
+              >
+            </li>
+            <li class="nav-item p-1">
+              <a class="nav-link text-light" href="#work" style="color: black"
+                >Work</a
+              >
+            </li>
+            <li class="nav-item p-1">
+              <a class="nav-link text-light" href="#" style="color: black"
+                >Experience</a
+              >
+            </li>
+            <li class="nav-item p-1">
+              <a class="nav-link text-light" href="#" style="color: black"
+                >Skills and Certifications</a
+              >
+            </li>
+            <li class="nav-item p-1">
+              <a class="nav-link text-light" href="#" style="color: black"
+                >Education</a
+              >
+            </li>
+          </ul>
         </div>
       </div>
-    </div>
-  </section>
+    </nav>
 
-  <section id="personal_summary" class="mt-4 p-5">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4">
+
+  <section id="header">
+      <div class="container">
+        <div class="row d-flex align-items-center justify-content-center">
+          <div class="col-md-4" id="profil_picture">
+            <center><img src='img/profil.png' style="width:100%"></center>
+          </div>
+          <div class="col-md-8 pt-5 pb-5 text-warning" id="profil_information">
+              <h1>Holla !</h1>
+              <h1> I am <b> Muhammad Alfarizi Tazkia </b> </h1>
+              <h2 class="mt-3"> Backend Engineer Enthusiast </h2>
+              <button class='btn btn-warning mt-4 shadow p-2' style='width:250px'><i class='fa-solid fa-circle-arrow-down' style='margin-right:10px'></i>Download CV</button>
+          </div>
+        </div>
+        <div class="row mt-3 mb-3 justify-content-center m-auto">
           <center>
-            <img src="img/figure.png" alt="" width="95%">
+            <h3 class="mb-4" style="color: white"><b>Let's Connected !</b></h3>
           </center>
-        </div>
-        <div class="col-md-8">
-          <div class="container">
-            <h1>
-              <b>
-                Who am I?
-              </b>
-            </h1>
-            <p class="mt-3" style="font-size: 13pt;" id="personal_summary_content">
-
-            </p>
+          <div class="col-md-1">
+            <center>
+              <a
+                target="_blank"
+                class="social-media btn btn-dark btn-outline-light btn-lg btn-floating mt-2 shadow"
+                style="border-radius: 100px"
+                href="https://github.com/MuhammadAlfariziTazkia"
+                role="button"
+              >
+                <i class="fab fa-github"></i>
+              </a>
+            </center>
+          </div>
+          <div class="col-md-1">
+            <center>
+              <a
+                target="_blank"
+                class="social-media btn btn-dark btn-outline-light btn-lg btn-floating mt-2 shadow"
+                style="border-radius: 100px"
+                href="https://www.linkedin.com/in/muhammad-alfarizi-tazkia/"
+                role="button"
+              >
+                <i class="fab fa-linkedin"></i>
+              </a>
+            </center>
+          </div>
+          <div class="col-md-1">
+            <center>
+              <a
+                target="_blank"
+                class="social-media btn btn-dark btn-outline-light btn-lg btn-floating mt-2 shadow"
+                style="border-radius: 100px"
+                href="https://www.instagram.com/muhammadalfarizi.t/"
+                role="button"
+              >
+                <i class="fab fa-instagram"></i>
+              </a>
+            </center>
+          </div>
+          <div class="col-md-1">
+            <center>
+              <a
+                target="_blank"
+                class="social-media btn btn-dark btn-outline-light btn-lg btn-floating mt-2 shadow"
+                style="border-radius: 100px"
+                href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSMTSDxNzdpLqxPjVkSSlpzCTCtZtVlkgTWcJhCCMJJzndGwBvtnnppLWlTtRDKlXhbtHGzk"
+                role="button"
+              >
+                <i class="far fa-envelope"></i>
+              </a>
+            </center>
+          </div>
+          <div class="col-md-1">
+            <center>
+              <a
+                target="_blank"
+                class="social-media btn btn-dark btn-outline-light btn-lg btn-floating mt-2 shadow"
+                style="border-radius: 100px"
+                href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSMTSDxNzdpLqxPjVkSSlpzCTCtZtVlkgTWcJhCCMJJzndGwBvtnnppLWlTtRDKlXhbtHGzk"
+                role="button"
+              >
+                <i class="fa-brands fa-youtube"></i>
+              </a>
+            </center>
           </div>
         </div>
       </div>
-    </div>
   </section>
 
-  <section id="project_and_work" class="bg-dark" style="color: white;">
-    <div class="container p-5">
-      <div class="row">
-        <div class="col-md-6 p-3" id="work">
-          <div class="badge bg-light" style="color: black;">
-            <h2>Work Experience</h2>
-          </div>
-          <div class="mt-4" style="overflow-y: scroll; overflow-x: hidden;height: 500px; scrollbar-color: black black;"
-            id="work_content">
-            <div class="row mb-2">
-    <hr>
-    <div class="col-md-3 p-3">
-        <center><img src="img/tiket.jpeg" alt="" width="50%" style="border-radius: 10px"></center>
-    </div>
-    <div class="col-md-9 mt-2 mb-2">
-        <h4><b>Tiket.com</b></h4>
-        <h6>Backend Engineer Internship</h6>
-        <h6>April 2022 - October 2022</h6>
-    </div>
-</div>
-<hr>
-<div class="row mb-2">
-    <hr>
-    <div class="col-md-3 p-3">
-        <center><img src="img/ggf.jpeg" alt="" width="50%" style="border-radius: 10px"></center>
-    </div>
-    <div class="col-md-9 mt-2 mb-2">
-        <h4><b>Great Giant Foods</b></h4>
-        <h6>Fullstack Developer Internship</h6>
-        <h6>October 2021 - April 2022</h6>
-    </div>
-</div>
-<hr>
-<div class="row mb-2">
-    <hr>
-    <div class="col-md-3 p-3">
-        <center><img src="img/lingotalk.jpeg" alt="" width="50%" style="border-radius: 10px"></center>
-    </div>
-    <div class="col-md-9 mt-2 mb-2">
-        <h4><b>Lingotalk</b></h4>
-        <h6>Backend Engineer Internship</h6>
-        <h6>June 2021 - October 2021</h6>
-    </div>
-</div>
-
-          </div>
-        </div>
-        <div class="col-md-6 p-3" id="project">
-          <div class="badge bg-light" style="color: black;">
-            <h2>Project Experience</h2>
-          </div>
-          <div class="mt-4" style="overflow-y: scroll; overflow-x: hidden;height: 500px; scrollbar-color: black black;"
-            id="project_content">
-            <div class="row mb-2">
-    <hr>
-    <div class="col-md-3"><img class="shadow" src="img/website.png" alt="" width="100%"></div>
-    <div class="col-md-9">
-        <h4><b>Organization Profile Website</b></h4>
-        <h6>Project Manager and Backend Engineer</h6>
-        <h6>Oct 2022</h6>
-    </div>
-</div>
-<hr>
-<div class="row mb-2">
-    <hr>
-    <div class="col-md-3"><img class="shadow" src="img/website.png" alt="" width="100%"></div>
-    <div class="col-md-9">
-        <h4><b>Automatic Scoring Website</b></h4>
-        <h6>Backend Engineer</h6>
-        <h6>April 2022</h6>
-    </div>
-</div>
-<hr>
-          </div>
-        </div>
+    <section id="about">
+      <div class="container">
+        <center>
+          <h1 class="text-warning">
+            <b> Who am I? </b>
+          </h1>
+          <p
+            class="mt-5 fs-5 text-light"
+            style="font-size: 13pt"
+            id="personal_summary_content"
+          >
+          I am Certified TensorFlow Developer, and Informatics Engineering graduates from Sumatera Institute of Technology with a GPA
+          of 3.77. I am very interested in Backend Development. So far, I feel comfortable in the Backend because so many complex problems
+          are so challenging to solve. My favorite programming language is Python, but I can also use Java, PHP, JavaScript, TypeScript,
+          and C++ programming languages. In addition, in Backend development I have also used NodeJS Framework/Library, ExpressJs,
+          Spring Boot, Laravel with Database technologies such as MongoDB, MySQL, PostgreSQL, Oracle SQL, PL/SQL, and FaunaDB.
+        </p>
+        </center>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="skill_and_certificate">
-    <div class="container p-5 mt-5">
-      <div class="row">
-        <div class="col-md-6 p-3" id="skill">
-          <div class="badge bg-dark">
-            <h2><b>My Skills</b></h2>
-          </div>
-          <div class="mt-4" style="overflow-y: scroll; overflow-x: hidden;height: 500px; scrollbar-color: black black;"
-            id="skills_content">
-            <div class="card shadow p-3 m-2 border-light" style="border-radius: 15px;">
-    <div class="row">
-        <div class="col-md-3 p-3">
-            <center><img src="img/java.png" alt="" width="55%"></center>
-        </div>
-        <div class="col-md-9 pl-3">
-            <div class="badge bg-primary">Programming Languages</div>
-            <h5 class="mt-3"><b>Java</b></h5>
-            <div class="progress bg-dark shadow" style="width: 90%; border-radius: 0;">
-                <div class="progress-bar bg-warning" role="progressbar" style="width: 90%"
-                    aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+    <section id="work">
+      <center>
+        <h1 class="text-warning">
+          <b> Work Experiences </b>
+        </h1>
+      </center>
+      <div id="carouselExample" class="carousel slide mt-4">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="container">
+              <div class="card bg-dark shadow border border-0 theme p-5">
+                <div class="row d-flex align-items-center justify-content-center">
+                  <div class="col-md-2 p-3">
+                    <center>
+                      <img src="img/hijra.jpeg" class="img-thumbnail" alt="...">
+                    </center>
+                  </div>
+                  <div class="col-md-10">
+                    <h3 class="d-block w-100 text-warning">
+                      <b>Backend Engineer @ HIJRA GROUP</b>
+                    </h3> 
+                    <h4 class="d-block w-100 text-light">Sept 2022 - Present</h4>
+                  </div>
+                </div>
+                <div class="row mt-3">
+                  <p class="text-light">Hijra Group (Previously names as ALAMI GROUP) is a <b>Financial Technology Company</b>, especially in Peer To Peer Lending Investment and Islamic Digital Banking in Indonesia</p>
+                <ol class="text-light">
+                  <li>Contributed to the Finance and Risk Management teams to improve overall operations and minimize financial risks.</li>
+                  <li>Successfully integrated internal systems with Oracle ERP, resulting in increased efficiency and accuracy of financial reporting.</li>
+                  <li>Analyzed and resolved errors and anomalies in data integration between internal systems and Oracle ERP to ensure data accuracy and reliability.</li>
+                  <li>Developed, repaired, and enhanced automated reporting tools to streamline financial data analysis and reporting for the Finance team.</li>
+                  <li>Played a significant role in enhancing the credit scoring mechanism by automating the process.</li>
+                  <li>Worked with Java, Spring Framework, PostgreSQL Database, Oracle APEX, Oracle Fusion. Hibernate, JDBC.</li>
+                </ol>
+                </div>
+              </div>
             </div>
-        </div>
-    </div>
-</div>
-<div class="card shadow p-3 m-2 border-light" style="border-radius: 15px;">
-    <div class="row">
-        <div class="col-md-3 p-3">
-            <center><img src="img/python.png" alt="" width="55%"></center>
-        </div>
-        <div class="col-md-9 pl-3">
-            <div class="badge bg-primary">Programming Languages</div>
-            <h5 class="mt-3"><b>Python</b></h5>
-            <div class="progress bg-dark shadow" style="width: 85%; border-radius: 0;">
-                <div class="progress-bar bg-warning" role="progressbar" style="width: 85%"
-                    aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+          <div class="carousel-item">
+            <div class="container">
+              <div class="card bg-dark shadow border border-0 theme p-5">
+                <div class="row d-flex align-items-center justify-content-center">
+                  <div class="col-md-2 p-3">
+                    <center>
+                      <img src="img/tiket.jpeg" class="img-thumbnail" alt="...">
+                    </center>
+                  </div>
+                  <div class="col-md-10">
+                    <h3 class="d-block w-100 text-warning">
+                      <b>Backend Engineer Internship @ TIKET.COM</b>
+                    </h3> 
+                    <h4 class="d-block w-100 text-light">April 2022 - October 2022</h4>
+                  </div>
+                </div>
+                <div class="row mt-3">
+                  <p class="text-light">Tiket.com is a <b>Travel Technology Company</b> in Indonesia</p>
+                <ol class="text-light">
+                  <li>Contributed to the success of a hotel accommodation business by providing valuable expertise in hospitality management and operations.</li>
+                  <li>Successfully improved several key features, including user management, resulting in enhanced functionality and user experience.</li>
+                  <li>Managed and resolved complex migration issues related to two endpoints and over 25 related services, ensuring minimal disruption to business operations and customer experience.</li>
+                  <li>Increased code coverage to over 90%, ensuring robustness and reliability of the software.</li>
+                  <li>Worked with Java, Reactive Java Spring Boot, MongoDB, and PostgreSQL Databas</li>
+                </ol>
+                </div>
+              </div>
             </div>
-        </div>
-    </div>
-</div>
-<div class="card shadow p-3 m-2 border-light" style="border-radius: 15px;">
-    <div class="row">
-        <div class="col-md-3 p-3">
-            <center><img src="img/javascript.png" alt="" width="55%"></center>
-        </div>
-        <div class="col-md-9 pl-3">
-            <div class="badge bg-primary">Programming Languages</div>
-            <h5 class="mt-3"><b>Javascript</b></h5>
-            <div class="progress bg-dark shadow" style="width: 80%; border-radius: 0;">
-                <div class="progress-bar bg-warning" role="progressbar" style="width: 80%"
-                    aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+          <div class="carousel-item">
+            <div class="container">
+              <div class="card bg-dark shadow border border-0 theme p-5">
+                <div class="row d-flex align-items-center justify-content-center">
+                  <div class="col-md-2 p-3">
+                    <center>
+                      <img src="img/ggf.jpeg" class="img-thumbnail" alt="...">
+                    </center>
+                  </div>
+                  <div class="col-md-10">
+                    <h3 class="d-block w-100 text-warning">
+                      <b>Fullstack Developer Internship @ GREAT GIANT FOODS</b>
+                    </h3> 
+                    <h4 class="d-block w-100 text-light">October 2021 - April 2022</h4>
+                  </div>
+                </div>
+                <div class="row mt-3">
+                  <p class="text-light">Great Giant Foods (GGF) is the brand entity of Gunung Sewu Group for a leading vertically integrated food player that cultivates, manufactures, delivers fresh and processed fruits, juice, meat, and dairy. Each of GGF’s business units has been established with the principle of sustainable integrated farming. These allow the organization to have complete oversee across our entire supply chain.</p>
+                <ol class="text-light">
+                  <li>Contributed to the success of the Risk Management team by providing valuable insights and expertise in risk assessment and mitigation strategies.</li>
+                  <li>Independently initiated, designed, and developed a highly dynamic Project Management application with the guidance of one supervisor, demonstrating strong technical and problem-solving skills.</li>
+                  <li>Designed and implemented a database system to support the Project Management application with the guidance of one supervisor, resulting in improved data management and analysis capabilities.</li>
+                  <li>Worked with PHP, Laravel, MySQL, JavaScript, JSS, Bootstrap, CSS, JQuery, and AJAX.</li>
+                </ol>
+                </div>
+              </div>
             </div>
-        </div>
-    </div>
-</div>
+          </div>
+          <div class="carousel-item">
+            <div class="container">
+              <div class="card bg-dark shadow border border-0 theme p-5">
+                <div class="row d-flex align-items-center justify-content-center">
+                  <div class="col-md-2 p-3">
+                    <center>
+                      <img src="img/lingotalk.jpeg" class="img-thumbnail" alt="...">
+                    </center>
+                  </div>
+                  <div class="col-md-10">
+                    <h3 class="d-block w-100 text-warning">
+                      <b>Backend Engineer Internship @ LingoTalk Indonesia</b>
+                    </h3> 
+                    <h4 class="d-block w-100 text-light">June 2021 - October 2021</h4>
+                  </div>
+                </div>
+                <div class="row mt-3">
+                  <p class="text-light">LingoTalk Indonesia is a <b>Education Technology Company</b>, especially in Language Learning</p>
+                <ol class="text-light">
+                  <li>Contributed in 3 projects in a 4 months internship as Backend Engineer using TypeScript, NodeJS, FaunaDB NoSQL Database.</li>
+                  <li>Handled problems related to discount voucher code activation.</li>
+                  <li>Populated more than 75% question databases for IELTS/TOEFL Event.</li>
+                  <li>Developed Admin Dashboard Project, as PIC in 2 main data, namely tutor and transaction data.</li>
+                  <li>Developed Recurring Payment Project.</li>
+                </ol>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="col-md-6 p-3" id="certificate">
-          <div class="badge bg-dark">
-            <h2>Certifications</h2>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+
+    <section id="skill_and_certificate">
+      <div class="container p-5 mt-5">
+        <div class="row">
+          <div class="col-md-6 p-3" id="skill">
+            <div class="badge bg-dark">
+              <h2><b>My Skills</b></h2>
+            </div>
+            <div
+              class="mt-4"
+              style="
+                overflow-y: scroll;
+                overflow-x: hidden;
+                height: 500px;
+                scrollbar-color: black black;
+              "
+              id="skills_content"
+            >
+              <div class="card bg-warning shadow border border-0 m-2" style="border-radius: 0" >
+                <div class="row m-3 d-flex align-items-center justify-content-center">
+                  <div class="col-md-3">
+                    <div class="card p-2" style="border-radius: 100%">
+                      <center>
+                        <img class="m-2" src="img/java.png" alt="" width="55%" />
+                      </center>
+                    </div>
+                  </div>
+                  <div class="col-md-9 pl-3">
+                    <h5><b>Java</b></h5>
+                    <div class="progress" role="progressbar" aria-label="Default striped example" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                      <div class="progress-bar progress-bar-striped bg-dark" style="width: 90%"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card bg-warning shadow border border-0 m-2" style="border-radius: 0" >
+                <div class="row m-3 d-flex align-items-center justify-content-center">
+                  <div class="col-md-3">
+                    <div class="card p-2" style="border-radius: 100%">
+                      <center>
+                        <img class="m-2" src="img/python.png" alt="" width="55%" />
+                      </center>
+                    </div>
+                  </div>
+                  <div class="col-md-9 pl-3">
+                    <h5><b>Python</b></h5>
+                    <div class="progress" role="progressbar" aria-label="Default striped example" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                      <div class="progress-bar progress-bar-striped bg-dark" style="width: 90%"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card bg-warning shadow border border-0 m-2" style="border-radius: 0" >
+                <div class="row m-3 d-flex align-items-center justify-content-center">
+                  <div class="col-md-3">
+                    <div class="card p-2" style="border-radius: 100%">
+                      <center>
+                        <img class="m-2" src="img/javascript.png" alt="" width="55%" />
+                      </center>
+                    </div>
+                  </div>
+                  <div class="col-md-9 pl-3">
+                    <h5><b>JavaScript</b></h5>
+                    <div class="progress" role="progressbar" aria-label="Default striped example" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                      <div class="progress-bar progress-bar-striped bg-dark" style="width: 90%"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card bg-warning shadow border border-0 m-2" style="border-radius: 0" >
+                <div class="row m-3 d-flex align-items-center justify-content-center">
+                  <div class="col-md-3">
+                    <div class="card p-2" style="border-radius: 100%">
+                      <center>
+                        <img class="m-2" src="img/typescript.png" alt="" width="55%" />
+                      </center>
+                    </div>
+                  </div>
+                  <div class="col-md-9 pl-3">
+                    <h5><b>TypeScript</b></h5>
+                    <div class="progress" role="progressbar" aria-label="Default striped example" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                      <div class="progress-bar progress-bar-striped bg-dark" style="width: 90%"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="mt-4" style="overflow-y: scroll; overflow-x: hidden;height: 500px; scrollbar-color: black black;"
-            id="certificate_content">
+          <div class="col-md-6 p-3" id="certificate">
+            <div class="badge bg-dark">
+              <h2>Certifications</h2>
+            </div>
+            <div
+              class="mt-4"
+              style="
+                overflow-y: scroll;
+                overflow-x: hidden;
+                height: 500px;
+                scrollbar-color: black black;
+              "
+              id="certificate_content"
+            ></div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="education" class="bg-dark p-5" style="color: white;">
-    <center>
-      <h1>
-        My Education
-      </h1>
-      <div class="container" id="education_content">
-      </div>
-    </center>
-  </section>
+    <section id="education" class="bg-dark p-5" style="color: white">
+      <center>
+        <h1>My Education</h1>
+        <div class="container" id="education_content"></div>
+      </center>
+    </section>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
-    crossorigin="anonymous"></script>
-  <script>
-//     loadSkills();
-//     loadCertificates();
-//     loadEducation();
-//     loadProjects();
-//     loadWorks();
-//     loadProfil();
-    function loadProfil() {
-      let request = new XMLHttpRequest();
-      request.open("GET", "https://m-alfarizi-tazkia-porto.herokuapp.com/api/profil");
-      request.send();
-      request.onload = () => {
-        if (request.status === 200) {
-          $("#loader").remove()
-          let profil = JSON.parse(request.response);
-          console.log(profil);
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      //     loadSkills();
+      //     loadCertificates();
+      //     loadEducation();
+      //     loadProjects();
+      //     loadWorks();
+      //     loadProfil();
+      function loadProfil() {
+        let request = new XMLHttpRequest();
+        request.open(
+          "GET",
+          "https://m-alfarizi-tazkia-porto.herokuapp.com/api/profil"
+        );
+        request.send();
+        request.onload = () => {
+          if (request.status === 200) {
+            $("#loader").remove();
+            let profil = JSON.parse(request.response);
+            console.log(profil);
 
-          let button_download_cv = "<button class='btn btn-dark mt-4 shadow p-2' style='width:250px'><i class='fa-solid fa-circle-arrow-down' style='margin-right:10px'></i>Download CV</button>"
+            let button_download_cv =
+              "<button class='btn btn-dark mt-4 shadow p-2' style='width:250px'><i class='fa-solid fa-circle-arrow-down' style='margin-right:10px'></i>Download CV</button>";
 
-          let profil_information = `<h1>Holla !</h1>`
-          profil_information += `<h1> I am <b> ${profil.name} </b> </h1>`
-          profil_information += `<h2 class="mt-3"> ${profil.bio} </h2>`
-          profil_information += button_download_cv
+            let profil_information = `<h1>Holla !</h1>`;
+            profil_information += `<h1> I am <b> ${profil.name} </b> </h1>`;
+            profil_information += `<h2 class="mt-3"> ${profil.bio} </h2>`;
+            profil_information += button_download_cv;
 
-          let profil_image = `<center><img src='img/${profil.image}' style="width:100%"></center>`
+            let profil_image = `<center><img src='img/${profil.image}' style="width:100%"></center>`;
 
-          $("#profil_information").append(profil_information);
-          $("#profil_picture").append(profil_image)
-          $("#personal_summary_content").append(profil.personal_summary)
-        } else {
-          console.log("Page not found"); // if link is broken, output will be page not found
-        }
+            $("#profil_information").append(profil_information);
+            $("#profil_picture").append(profil_image);
+            $("#personal_summary_content").append(profil.personal_summary);
+          } else {
+            console.log("Page not found"); // if link is broken, output will be page not found
+          }
+        };
+      }
+      function loadSkills() {
+        let request = new XMLHttpRequest();
+        request.open(
+          "GET",
+          "https://m-alfarizi-tazkia-porto.herokuapp.com/api/skills"
+        );
+        request.send();
+        request.onload = () => {
+          if (request.status === 200) {
+            let skills = JSON.parse(request.response);
+            skills.forEach((skill) => {
+              if (skill.category == "Programming Languages") {
+                $("#skills_content").append(
+                  ` <div class="card shadow p-3 m-2 border-light" style="border-radius: 15px;"><div class="row"><div class="col-md-3 p-3"><center><img src="img/${skill.icon}" alt="" width="55%"></center></div><div class="col-md-9 pl-3"><div class="badge bg-primary">${skill.category}</div><h5 class="mt-3"><b>${skill.name}</b></h5><div class="progress bg-dark shadow" style="width: 75%; border-radius: 0;"><div class="progress-bar bg-warning" role="progressbar" style="width: ${skill.fluently_score}%" aria-valuenow="${skill.fluently_score}" aria-valuemin="0" aria-valuemax="100"></div></div></div></div></div>`
+                );
+              } else if (skill.category == "Programming Framework") {
+                $("#skills_content").append(
+                  ` <div class="card shadow p-3 m-2 border-light" style="border-radius: 15px;"><div class="row"><div class="col-md-3 p-3"><center><img src="img/${skill.icon}" alt="" width="55%"></center></div><div class="col-md-9 pl-3"><div class="badge bg-dark">${skill.category}</div><h5 class="mt-3"><b>${skill.name}</b></h5><div class="progress bg-dark shadow" style="width: 75%; border-radius: 0;"><div class="progress-bar bg-warning" role="progressbar" style="width: ${skill.fluently_score}%" aria-valuenow="${skill.fluently_score}" aria-valuemin="0" aria-valuemax="100"></div></div></div></div></div>`
+                );
+              } else if (skill.category == "Database Technology") {
+                $("#skills_content").append(
+                  ` <div class="card shadow p-3 m-2 border-light" style="border-radius: 15px;"><div class="row"><div class="col-md-3 p-3"><center><img src="img/${skill.icon}" alt="" width="55%"></center></div><div class="col-md-9 pl-3"><div class="badge bg-danger">${skill.category}</div><h5 class="mt-3"><b>${skill.name}</b></h5><div class="progress bg-dark shadow" style="width: 75%; border-radius: 0;"><div class="progress-bar bg-warning" role="progressbar" style="width: ${skill.fluently_score}%" aria-valuenow="${skill.fluently_score}" aria-valuemin="0" aria-valuemax="100"></div></div></div></div></div>`
+                );
+              } else {
+                $("#skills_content").append(
+                  ` <div class="card shadow p-3 m-2 border-light" style="border-radius: 15px;"><div class="row"><div class="col-md-3 p-3"><center><img src="img/${skill.icon}" alt="" width="55%"></center></div><div class="col-md-9 pl-3"><div class="badge bg-success">${skill.category}</div><h5 class="mt-3"><b>${skill.name}</b></h5><div class="progress bg-dark shadow" style="width: 75%; border-radius: 0;"><div class="progress-bar bg-warning" role="progressbar" style="width: ${skill.fluently_score}%" aria-valuenow="${skill.fluently_score}" aria-valuemin="0" aria-valuemax="100"></div></div></div></div></div>`
+                );
+              }
+            });
+            console.log(skills);
+          } else {
+            console.log("Page not found"); // if link is broken, output will be page not found
+          }
+        };
+      }
+      function loadProjects() {
+        let request = new XMLHttpRequest();
+        request.open(
+          "GET",
+          "https://m-alfarizi-tazkia-porto.herokuapp.com/api/project"
+        );
+        request.send();
+        request.onload = () => {
+          if (request.status === 200) {
+            let projects = JSON.parse(request.response);
 
-      };
-    }
-    function loadSkills() {
-      let request = new XMLHttpRequest();
-      request.open("GET", "https://m-alfarizi-tazkia-porto.herokuapp.com/api/skills");
-      request.send();
-      request.onload = () => {
-        if (request.status === 200) {
-          let skills = JSON.parse(request.response);
-          skills.forEach(skill => {
-            if (skill.category == "Programming Languages") {
-              $("#skills_content").append(` <div class="card shadow p-3 m-2 border-light" style="border-radius: 15px;"><div class="row"><div class="col-md-3 p-3"><center><img src="img/${skill.icon}" alt="" width="55%"></center></div><div class="col-md-9 pl-3"><div class="badge bg-primary">${skill.category}</div><h5 class="mt-3"><b>${skill.name}</b></h5><div class="progress bg-dark shadow" style="width: 75%; border-radius: 0;"><div class="progress-bar bg-warning" role="progressbar" style="width: ${skill.fluently_score}%" aria-valuenow="${skill.fluently_score}" aria-valuemin="0" aria-valuemax="100"></div></div></div></div></div>`)
-            } else if (skill.category == "Programming Framework") {
-              $("#skills_content").append(` <div class="card shadow p-3 m-2 border-light" style="border-radius: 15px;"><div class="row"><div class="col-md-3 p-3"><center><img src="img/${skill.icon}" alt="" width="55%"></center></div><div class="col-md-9 pl-3"><div class="badge bg-dark">${skill.category}</div><h5 class="mt-3"><b>${skill.name}</b></h5><div class="progress bg-dark shadow" style="width: 75%; border-radius: 0;"><div class="progress-bar bg-warning" role="progressbar" style="width: ${skill.fluently_score}%" aria-valuenow="${skill.fluently_score}" aria-valuemin="0" aria-valuemax="100"></div></div></div></div></div>`)
-            } else if (skill.category == "Database Technology") {
-              $("#skills_content").append(` <div class="card shadow p-3 m-2 border-light" style="border-radius: 15px;"><div class="row"><div class="col-md-3 p-3"><center><img src="img/${skill.icon}" alt="" width="55%"></center></div><div class="col-md-9 pl-3"><div class="badge bg-danger">${skill.category}</div><h5 class="mt-3"><b>${skill.name}</b></h5><div class="progress bg-dark shadow" style="width: 75%; border-radius: 0;"><div class="progress-bar bg-warning" role="progressbar" style="width: ${skill.fluently_score}%" aria-valuenow="${skill.fluently_score}" aria-valuemin="0" aria-valuemax="100"></div></div></div></div></div>`)
-            }else {
-              $("#skills_content").append(` <div class="card shadow p-3 m-2 border-light" style="border-radius: 15px;"><div class="row"><div class="col-md-3 p-3"><center><img src="img/${skill.icon}" alt="" width="55%"></center></div><div class="col-md-9 pl-3"><div class="badge bg-success">${skill.category}</div><h5 class="mt-3"><b>${skill.name}</b></h5><div class="progress bg-dark shadow" style="width: 75%; border-radius: 0;"><div class="progress-bar bg-warning" role="progressbar" style="width: ${skill.fluently_score}%" aria-valuenow="${skill.fluently_score}" aria-valuemin="0" aria-valuemax="100"></div></div></div></div></div>`)
-            }
-          });
-          console.log(skills);
-        } else {
-          console.log("Page not found"); // if link is broken, output will be page not found
-        }
-      };
-    }
-    function loadProjects() {
-      let request = new XMLHttpRequest();
-      request.open("GET", "https://m-alfarizi-tazkia-porto.herokuapp.com/api/project");
-      request.send();
-      request.onload = () => {
-        if (request.status === 200) {
-          let projects = JSON.parse(request.response);
+            projects.forEach((project) => {
+              $("#project_content").append(
+                `<div class="row mb-2"><hr><div class="col-md-3"><img class="shadow" src="img/${project.icon}" alt="" width="100%"></div><div class="col-md-9"><h4><b>${project.name}</b></h4><h6>${project.position}</h6><h6>${project.time}</h6></div></div>`
+              );
+            });
 
-          projects.forEach(project => {
-            $("#project_content").append(`<div class="row mb-2"><hr><div class="col-md-3"><img class="shadow" src="img/${project.icon}" alt="" width="100%"></div><div class="col-md-9"><h4><b>${project.name}</b></h4><h6>${project.position}</h6><h6>${project.time}</h6></div></div>`)
-          });
+            $("#project_content").append("<hr>");
+            console.log(projects);
+          } else {
+            console.log("Page not found"); // if link is broken, output will be page not found
+          }
+        };
+      }
+      function loadWorks() {
+        let request = new XMLHttpRequest();
+        request.open(
+          "GET",
+          "https://m-alfarizi-tazkia-porto.herokuapp.com/api/work"
+        );
+        request.send();
+        request.onload = () => {
+          if (request.status === 200) {
+            let works = JSON.parse(request.response);
+            console.log(works);
+            works.forEach((work) => {
+              $("#work_content").append(
+                `<div class="row mb-2"><hr><div class="col-md-3 p-3"><center><img src="img/${work.company_icon}" alt="" width="50%" style="border-radius: 10px"></center></div><div class="col-md-9 mt-2 mb-2"><h4><b>${work.company}</b></h4><h6>${work.position} ${work.type}</h6><h6>${work.start} - ${work.end}</h6></div></div>`
+              );
+            });
+            $("#work_content").append("<hr>");
+          } else {
+            console.log("Page not found"); // if link is broken, output will be page not found
+          }
+        };
+      }
+      function loadCertificates() {
+        let request = new XMLHttpRequest();
+        request.open(
+          "GET",
+          "https://m-alfarizi-tazkia-porto.herokuapp.com/api/certificate"
+        );
+        request.send();
+        request.onload = () => {
+          if (request.status === 200) {
+            let certificates = JSON.parse(request.response);
+            console.log(certificates);
 
-          $("#project_content").append("<hr>")
-          console.log(projects);
-        } else {
-          console.log("Page not found"); // if link is broken, output will be page not found
-        }
-      };
-    }
-    function loadWorks() {
-      let request = new XMLHttpRequest();
-      request.open("GET", "https://m-alfarizi-tazkia-porto.herokuapp.com/api/work");
-      request.send();
-      request.onload = () => {
-        if (request.status === 200) {
-          let works = JSON.parse(request.response);
-          console.log(works);
-          works.forEach(work => {
-            $("#work_content").append(`<div class="row mb-2"><hr><div class="col-md-3 p-3"><center><img src="img/${work.company_icon}" alt="" width="50%" style="border-radius: 10px"></center></div><div class="col-md-9 mt-2 mb-2"><h4><b>${work.company}</b></h4><h6>${work.position} ${work.type}</h6><h6>${work.start} - ${work.end}</h6></div></div>`)
-          });
-          $("#work_content").append("<hr>")
-        } else {
-          console.log("Page not found"); // if link is broken, output will be page not found
-        }
-      };
-    }
-    function loadCertificates() {
-      let request = new XMLHttpRequest();
-      request.open("GET", "https://m-alfarizi-tazkia-porto.herokuapp.com/api/certificate");
-      request.send();
-      request.onload = () => {
-        if (request.status === 200) {
-          let certificates = JSON.parse(request.response);
-          console.log(certificates);
+            certificates.forEach((certificate) => {
+              let expired_date = certificate.expired_date;
+              if (expired_date == null) {
+                expired_date = "<h6>Without Expiration Date</h6>";
+              } else {
+                expired_date = `<h6>Expired on ${certificate.expired_date}</h6>`;
+              }
+              let credential_id = `<h6 class="mt-2">Credential ID ${certificate.credential_id}</h6>`;
+              let field_badge = `<h6><span class="badge badge-pill bg-primary">${certificate.field}</span></h6>`;
+              $("#certificate_content").append(
+                `<div class="row mb-3"><hr><div class="col-md-3 p-3"><center><img src="img/${certificate.organization_icon}" alt="" width="60%"></center></div><div class="col-md-9 p-3">${field_badge}<h5 class="mr-2"><b>${certificate.name}</b></h5> <h6><b>Issued By ${certificate.organization_issued}</b></h6>${expired_date}<a href="${certificate.credential_url}" class="btn btn-dark mt-2 shadow" target="_blank">See Credentials</a></div></div>`
+              );
+            });
+            $("#certificate_content").append("<hr>");
+          } else {
+            console.log("Page not found"); // if link is broken, output will be page not found
+          }
+        };
+      }
+      function loadEducation() {
+        let request = new XMLHttpRequest();
+        request.open(
+          "GET",
+          "https://m-alfarizi-tazkia-porto.herokuapp.com/api/education"
+        );
+        request.send();
+        request.onload = () => {
+          if (request.status === 200) {
+            let educations = JSON.parse(request.response);
 
-          certificates.forEach(certificate => {
-            let expired_date = certificate.expired_date;
-            if (expired_date == null) {
-              expired_date = "<h6>Without Expiration Date</h6>"
-            } else {
-              expired_date = `<h6>Expired on ${certificate.expired_date}</h6>`
-            }
-            let credential_id = `<h6 class="mt-2">Credential ID ${certificate.credential_id}</h6>`
-            let field_badge = `<h6><span class="badge badge-pill bg-primary">${certificate.field}</span></h6>`
-            $("#certificate_content").append(`<div class="row mb-3"><hr><div class="col-md-3 p-3"><center><img src="img/${certificate.organization_icon}" alt="" width="60%"></center></div><div class="col-md-9 p-3">${field_badge}<h5 class="mr-2"><b>${certificate.name}</b></h5> <h6><b>Issued By ${certificate.organization_issued}</b></h6>${expired_date}<a href="${certificate.credential_url}" class="btn btn-dark mt-2 shadow" target="_blank">See Credentials</a></div></div>`)
-          });
-          $("#certificate_content").append("<hr>")
-        } else {
-          console.log("Page not found"); // if link is broken, output will be page not found
-        }
-      };
-    }
-    function loadEducation() {
-      let request = new XMLHttpRequest();
-      request.open("GET", "https://m-alfarizi-tazkia-porto.herokuapp.com/api/education");
-      request.send();
-      request.onload = () => {
-        if (request.status === 200) {
-          let educations = JSON.parse(request.response);
-
-          educations.forEach(education => {
-            $("#education_content").append(`<hr class="mt-4"><h5 class="mt-4">${education.institution}</h5><h6>${education.majory}</h6>`)
-          });
-          $("#education_content").append("<hr class='mt-4'>")
-          console.log(education);
-        } else {
-          console.log("Page not found"); // if link is broken, output will be page not found
-        }
-      };
-    }
-  </script>
-
+            educations.forEach((education) => {
+              $("#education_content").append(
+                `<hr class="mt-4"><h5 class="mt-4">${education.institution}</h5><h6>${education.majory}</h6>`
+              );
+            });
+            $("#education_content").append("<hr class='mt-4'>");
+            console.log(education);
+          } else {
+            console.log("Page not found"); // if link is broken, output will be page not found
+          }
+        };
+      }
+    </script>
 </body>
+</body>
+
+  </body>
 
 </html>
